@@ -167,5 +167,5 @@ O código, escrito em JavaScript, implementa um encriptador e desencriptador de 
 
 ## Tecnologias Utilizadas
 
-- JavaScript
+- JavaScript, HTML e CSS. 
 - [ResponsiveVoice](https://responsivevoice.org/)
