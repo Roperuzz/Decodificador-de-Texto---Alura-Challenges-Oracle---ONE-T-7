@@ -135,7 +135,6 @@ O código CSS é utilizado para estilizar a página web do projeto de criptograf
 ## Estrutura do Código JavaScript
 
 O código, escrito em JavaScript, implementa um encriptador e desencriptador de textos que utiliza substituições específicas de letras para converter mensagens. A lógica é baseada em dois objetos: um para substituições diretas e outro para substituições inversas.
-# Criptografador e Descriptografador de Textos
 
 ### Substituições e Inversas
 
