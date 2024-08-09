@@ -8,19 +8,30 @@
 }
 
 .fontes {
-    font-size: 16px;
+    font-size: 1rem; /* Ajustado para unidade relativa */
     font-family: "Inter", sans-serif;
 }
 
 body {
     background-image: url("assets/Frame01.jpg");
-    background-size: cover; /* Faz a imagem de fundo cobrir toda a área visível */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da tela */
+    color: white;
+    font-family: "Inter", sans-serif;
     margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay para melhorar a legibilidade */
+    z-index: -1; /* Mantém o overlay atrás do conteúdo */
 }
 
 header {
@@ -32,29 +43,21 @@ header {
 }
 
 .header-img {
-    width: 60px; /* Tamanho da imagem */
+    max-width: 50px;
+    width: 10%;
     height: auto;
-    margin-right: 30px; /* Espaçamento entre a imagem e o título */
+    margin-right: 30px;
     margin-bottom: 30px;
     position: relative;
-    right: 10%; /* Para ajudar no posicionamento do centro */
-    filter: saturate(2.5) brightness(1.2); /* Ajusta a saturação e brilho */
-}
-
-main {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto; /* Centraliza o main horizontalmente */
-    padding: 225px;
-    flex: 10px; /* Faz com que o main ocupe o espaço disponível */
+    filter: saturate(2.5) brightness(0.8); /* Ajusta a saturação e brilho */
 }
 
 h1 {
     background: linear-gradient(to right, #1e90ff, #87cefa, #1e90ff); /* Gradiente para criar o efeito metálico */
-    -webkit-background-clip: text; /* Para Chrome e Safari */
-    color: transparent; /* Faz o texto ser transparente, revelando o gradiente */
+    -webkit-background-clip: text;
+    color: transparent;
     font-weight: bold;
-    text-align: center; /* Centraliza o título */
+    text-align: center;
 }
 
 @keyframes piscar {
@@ -64,26 +67,24 @@ h1 {
 }
 
 h2 {
-    background: linear-gradient(to right, #e74c3c, #c0392b, #e74c3c); /* Gradiente vermelho metálico */
-    -webkit-background-clip: text; /* Faz o gradiente ser aplicado ao texto (para WebKit browsers) */
-    background-clip: text; /* Faz o gradiente ser aplicado ao texto */
-    color: transparent; /* Torna o texto transparente para revelar o gradiente */
-    padding: 5px; /* Aumenta o espaçamento interno */
-    border: none; /* Remove a borda */
-    margin: 0; /* Remove as margens */
-    font-weight: bold; /* Fonte em negrito para dar ênfase */
-    font-size: 15px; /* Ajusta o tamanho da fonte */
-    border-radius: 0; /* Remove a borda arredondada */
-    text-align: left; /* Alinha o texto à esquerda */
-    animation: piscar 1.5s infinite; /* Aplica a animação de piscar */
-    margin-bottom: 10px; /* Ajuste conforme necessário */
+    text-transform: capitalize;
+    background: linear-gradient(to right, #e74c3c, #c0392b, #e74c3c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 0.75rem; /* Ajustado para unidade relativa */
+    text-align: left;
+    animation: piscar 1s infinite;
+    margin-bottom: 10px;
 }
 
 #content {
     text-align: center;
     color: white;
     padding: 2%;
-    background-color: transparent; /* Corrige o valor de background-color para transparente */
+    background-color: transparent;
 }
 
 .container {
@@ -94,44 +95,41 @@ h2 {
 .result {
     margin-top: 0;
     padding: 10px;
-    border: 4px solid #333; /* Cor de borda mais escura para contraste */
+    border: 4px solid #333;
     border-radius: 10px;
-    background-color: #f9f9f9; /* Fundo claro para garantir boa legibilidade */
-    color: black; /* Cor do texto dentro da área de resultado */
+    background-color: #f9f9f9;
+    color: black;
 }
 
 footer {
-    width: 100%;        /* Garante que o footer ocupe toda a largura da tela */
-    padding: 30px;
+    margin-top: 30px;
+    padding: 10px;
     border-top: 1px solid #ccc;
     text-align: center;
-    font-weight: bold; /* Deixa o texto em negrito */
-      
 }
 
-
 button {
-    margin-right: 15px; /* Aumenta o espaçamento entre os botões */
-    margin-bottom: 10px; /* Adiciona margem inferior para espaçar do próximo elemento */
-    padding: 10px 20px; /* Adiciona padding para um tamanho de botão mais confortável */
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    cursor: pointer; /* Mãozinha ao passar o mouse */
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #0056b3;
 }
 
 .text-area {
-    background-color: #333; /* Fundo escuro para contraste com o texto branco */
+    background-color: #333;
     color: white;
-    margin-bottom: 20px; /* Adiciona margem inferior para separar dos próximos elementos */
-    padding: 15px; /* Aumenta o padding para mais espaçamento interno */
-    border-radius: 5px; /* Borda arredondada */
-    border: 2px solid #fff; /* Borda branca para melhor destaque */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #fff;
 }
 
 #inputText {
@@ -139,17 +137,42 @@ button:hover {
     height: 100px;
     border: none;
     padding: 10px;
-    background: rgba(0, 0, 255, 0.5); /* Fundo azul com 50% de transparência */
+    background: rgba(0, 0, 255, 0.5);
     color: white;
-    font-size: 16px;
+    font-size: 1rem; /* Ajustado para unidade relativa */
     resize: none;
 }
 
 #resultText {
     margin-top: 10px;
     padding: 50px;
-    background-color: #f9f9f9; /* Fundo claro */
-    color: black; /* Texto preto */
-    border-radius: 5px; /* Borda arredondada */
-    border: 2px solid #ccc; /* Borda cinza clara */
+    background-color: #f9f9f9;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid #ccc;
 }
+
+.hover-text {
+    cursor: pointer;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Ajuste do tamanho da fonte em telas menores */
+    }
+
+    .container {
+        max-width: 90%; /* Reduz o tamanho do container em telas menores */
+    }
+
+    .result {
+        padding: 5px;
+        border: 2px solid #333;
+    }
+
+    button {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível em telas menores */
+    }
+}
+
