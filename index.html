@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=pm4gmsUN"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Criptografia e Descriptografia</title>
+</head>
+<body class="fontes">
+    <header>
+        <img src="./assets/Frame.png" alt="Logotipo do Decodificador de Texto" class="header-img">
+        <h1>Decodificador de Texto - Alura Challenges Oracle - ONE T 7</h1>
+    </header>
+    <div id="content">
+        <main>
+            <div class="container">
+                <div class="text-area">
+                    <textarea id="digiteTexto" rows="4" cols="50" placeholder="Digite o texto aqui..."></textarea>
+                </div>
+                <div class="button-group">
+                    <button onclick="criptografar()">Criptografar</button>
+                    <button onclick="descriptografar()">Descriptografar</button>
+                    <button onclick="copiar()">Copiar</button>
+                </div>
+                <h2>! Use Apenas Letras Minúsculas, Sem Acentos e Caracteres Especiais</h2>
+                <div class="result">
+                    <h3>Resultado:</h3>
+                    <p id="areaDecodificacao">Aqui será exibido o texto resultante.</p>
+                    <div id="secondArea"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Desenvolvido por: Rodrigo Peruzzo<br>
+            <a href="https://www.linkedin.com/in/rodrigo-peruzzo-524014219/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               style="display: inline-flex; align-items: center; text-decoration: none;">
+                <span>Contato:</span>
+                <img src="./assets/linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px; margin-left: 5px;" />
+                <span style="text-decoration: underline; margin-left: 5px;">Linkedin</span>
+            </a>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
