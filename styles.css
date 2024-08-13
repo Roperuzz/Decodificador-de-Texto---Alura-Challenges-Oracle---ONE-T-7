@@ -89,6 +89,12 @@ h2 {
 .container {
     max-width: 700px;
     margin: auto;
+    padding: 0 10px; /* Adicionado padding para telas menores */
+}
+
+.result, #resultText, .text-area {
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
 }
 
 .result {
@@ -165,13 +171,12 @@ button:hover {
         max-width: 90%; /* Reduz o tamanho do container em telas menores */
     }
 
-    .result {
-        padding: 5px;
-        border: 2px solid #333;
+    .result, #resultText, .text-area {
+        padding: 10px; /* Ajusta o padding para melhor apresentação em telas menores */
     }
 
     button {
         width: 100%; /* Faz o botão ocupar toda a largura disponível em telas menores */
+        margin: 5px 0; /* Ajusta as margens para não ficar muito espaçado */
     }
 }
-
