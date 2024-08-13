@@ -30,7 +30,6 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay para melhorar a legibilidade */
     z-index: -1; /* Mantém o overlay atrás do conteúdo */
 }
 
@@ -49,7 +48,7 @@ header {
     margin-right: 30px;
     margin-bottom: 30px;
     position: relative;
-    filter: saturate(2.5) brightness(0.8); /* Ajusta a saturação e brilho */
+    filter: saturate(2.5) brightness(2.0); /* Ajusta a saturação e brilho */
 }
 
 h1 {
@@ -102,8 +101,8 @@ h2 {
 }
 
 footer {
-    margin-top: 30px;
-    padding: 10px;
+    margin-top: 30rem;
+    padding: 20px;
     border-top: 1px solid #ccc;
     text-align: center;
 }
