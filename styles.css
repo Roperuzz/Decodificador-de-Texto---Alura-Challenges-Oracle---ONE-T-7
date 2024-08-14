@@ -10,7 +10,7 @@
 .fontes {
     font-size: 1rem; /* Ajustado para unidade relativa */
     font-family: "Inter", sans-serif;
-}
+}   
 
 body {
     background-image: url("assets/Frame01.jpg");
@@ -95,7 +95,7 @@ h2 {
 .result, #resultText, .text-area {
     width: 100%;
     box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
-}
+}   
 
 .result {
     margin-top: 0;
@@ -144,21 +144,14 @@ button:hover {
     padding: 10px;
     background: rgba(0, 0, 255, 0.5);
     color: white;
-    font-size: 1rem; /* Ajustado para unidade relativa */
-    resize: none;
+    resize: none; /* Desabilita o redimensionamento por padrão */
 }
 
-#resultText {
-    margin-top: 10px;
-    padding: 50px;
-    background-color: #f9f9f9;
-    color: black;
-    border-radius: 5px;
-    border: 2px solid #ccc;
-}
-
-.hover-text {
-    cursor: pointer;
+/* Redimensionamento habilitado para telas maiores */
+@media (min-width: 769px) {
+    #inputText {
+        resize: both; /* Habilita o redimensionamento em telas maiores */
+    }
 }
 
 /* Media Queries para responsividade */
@@ -179,4 +172,17 @@ button:hover {
         width: 100%; /* Faz o botão ocupar toda a largura disponível em telas menores */
         margin: 5px 0; /* Ajusta as margens para não ficar muito espaçado */
     }
+}
+
+#resultText {
+    margin-top: 10px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.hover-text {
+    cursor: pointer;
 }
