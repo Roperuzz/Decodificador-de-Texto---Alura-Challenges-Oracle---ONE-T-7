@@ -135,6 +135,7 @@ button:hover {
     padding: 15px;
     border-radius: 5px;
     border: 2px solid #fff;
+    
 }
 
 #inputText {
@@ -143,8 +144,11 @@ button:hover {
     border: none;
     padding: 10px;
     background: rgba(0, 0, 255, 0.5);
-    color: white;
-    resize: both; /* Habilita o redimensionamento em telas maiores */
+    color: white;    
+}
+
+textarea {
+    resize: both; 
 }
 
 /* Redimensionamento habilitado para telas maiores */
