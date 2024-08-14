@@ -148,15 +148,7 @@ button:hover {
 }
 
 textarea {
-    resize: both; 
-}
-
-/* Redimensionamento habilitado para telas menores */
-@media (max-width: 768px) {
-    textarea {
-        resize: none;  /* Desabilita o redimensionamento por padrão */
-    }
-
+    resize: none; 
 }
 
 /* Media Queries para responsividade */
