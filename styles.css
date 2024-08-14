@@ -148,9 +148,16 @@ button:hover {
 }
 
 textarea {
-    resize: none; 
+    resize: both; 
 }
+/* Redimensionamento habilitado para telas menores */
+@media (max-width: 768px) {
+    textarea {
+        resize: none;  /* Desabilita o redimensionamento por padrão */
+        max-width: 90%; /* Reduz o tamanho do container em telas menores 
+    }
 
+}
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
     h1 {
