@@ -151,11 +151,12 @@ textarea {
     resize: both; 
 }
 
-/* Redimensionamento habilitado para telas maiores */
+/* Redimensionamento habilitado para telas menores */
 @media (max-width: 768px) {
-    #inputText {
+    textarea {
         resize: none;  /* Desabilita o redimensionamento por padrão */
     }
+
 }
 
 /* Media Queries para responsividade */
