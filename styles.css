@@ -144,13 +144,13 @@ button:hover {
     padding: 10px;
     background: rgba(0, 0, 255, 0.5);
     color: white;
-    resize: none; /* Desabilita o redimensionamento por padrão */
+    resize: both; /* Habilita o redimensionamento em telas maiores */
 }
 
 /* Redimensionamento habilitado para telas maiores */
-@media (min-width: 769px) {
+@media (max-width: 768px) {
     #inputText {
-        resize: both; /* Habilita o redimensionamento em telas maiores */
+        resize: none;  /* Desabilita o redimensionamento por padrão */
     }
 }
 
