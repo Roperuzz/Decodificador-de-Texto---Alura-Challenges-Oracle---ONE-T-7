@@ -1,4 +1,3 @@
-// Substituições e Inversas
 const substitutions = {
     'e': 'enter',
     'i': 'imes',
@@ -113,7 +112,6 @@ function setupTextToSpeech() {
     });
 }
 
-// Inicializa a função de leitura de texto quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', setupTextToSpeech);
 
 
