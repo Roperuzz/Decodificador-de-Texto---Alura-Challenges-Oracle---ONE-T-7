@@ -8,7 +8,7 @@
 }
 
 .fontes {
-    font-size: 1rem; /* Ajustado para unidade relativa */
+    font-size: 1rem; 
     font-family: "Inter", sans-serif;
 }   
 
@@ -30,7 +30,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1; /* Mantém o overlay atrás do conteúdo */
+    z-index: -1; 
 }
 
 header {
@@ -38,7 +38,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .header-img {
@@ -48,11 +48,11 @@ header {
     margin-right: 30px;
     margin-bottom: 30px;
     position: relative;
-    filter: saturate(2.5) brightness(2.0); /* Ajusta a saturação e brilho */
+    filter: saturate(2.5) brightness(2.0); 
 }
 
 h1 {
-    background: linear-gradient(to right, #1e90ff, #87cefa, #1e90ff); /* Gradiente para criar o efeito metálico */
+    background: linear-gradient(to right, #1e90ff, #87cefa, #1e90ff); 
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
@@ -73,7 +73,7 @@ h2 {
     color: transparent;
     padding: 5px;
     font-weight: bold;
-    font-size: 0.75rem; /* Ajustado para unidade relativa */
+    font-size: 0.75rem; 
     text-align: left;
     animation: piscar 1s infinite;
     margin-bottom: 10px;
@@ -89,12 +89,12 @@ h2 {
 .container {
     max-width: 700px;
     margin: auto;
-    padding: 0 10px; /* Adicionado padding para telas menores */
+    padding: 0 10px; 
 }
 
 .result, #resultText, .text-area {
     width: 100%;
-    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
+    box-sizing: border-box; 
 }   
 
 .result {
@@ -153,28 +153,28 @@ textarea {
 /* Redimensionamento habilitado para telas menores */
 @media (max-width: 768px) {
     textarea {
-        resize: none;  /* Desabilita o redimensionamento por padrão */
-        max-width: 90%; /* Reduz o tamanho do container em telas menores 
+        resize: none;  
+        max-width: 90%; 
     }
 
 }
-/* Media Queries para responsividade */
+
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.5rem; /* Ajuste do tamanho da fonte em telas menores */
+        font-size: 1.5rem; 
     }
 
     .container {
-        max-width: 90%; /* Reduz o tamanho do container em telas menores */
+        max-width: 90%; 
     }
 
     .result, #resultText, .text-area {
-        padding: 10px; /* Ajusta o padding para melhor apresentação em telas menores */
+        padding: 10px; 
     }
 
     button {
-        width: 100%; /* Faz o botão ocupar toda a largura disponível em telas menores */
-        margin: 5px 0; /* Ajusta as margens para não ficar muito espaçado */
+        width: 100%; 
+        margin: 5px 0; 
     }
 }
 
